@@ -1,9 +1,9 @@
 const { response } = require("express");
 const express = require("express");
-
+const port = process.env.PORT || 3000
 const server = express();
 
-server.listen(3000, () => {
+server.listen(port, () => {
   console.log("server is runig on port 3000");
 });
 const theAnswer = "loope";
